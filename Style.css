@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(1, 51, 38);
+}
+header .navbar-nav{
+    justify-content: end;
+    width:  100%;
+}
+header .navbar-toggler{
+    border: 1px solid white;
+    border-radius: 0;
+}
+header .navbar-toggler:focus{
+    box-shadow: none;
+}
+header .navbar-toggler span{
+    color: white;
+    font-size: 30px;
+}
+.homeslide .slider1{
+    background: url(images/slider1.jpg) no-repeat center;
+    background-size: cover;
+    padding: 130px 0px;
+    position: relative;
+    z-index: 1;
+}
+.homeslide .slider2{
+     background: url(images/slider2.jpg) no-repeat center;
+    background-size: cover;
+     padding: 130px 0px;
+        position: relative;
+    z-index: 1;
+}
+.homeslide .slider3{
+     background: url(images/slider3.jpg) no-repeat center;
+    background-size: cover;
+     padding: 130px 0px;
+        position: relative;
+    z-index: 1;
+}
+.homeslide .slider4{
+     background: url(images/slider4.jpg) no-repeat center;
+    background-size: cover;
+    padding: 130px 0px;
+    position: relative;
+    z-index: 1;
+}
+.homeslide .btnRead{
+    padding: 10px 20px;
+    background-color: rgb(208, 73, 118);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: 0.2s ease all;
+}
+.homeslide .slider1::after, .slider2::after, .slider3::after,.slider4::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.436);
+    z-index: -1;
+}
+.homeslide .btnRead:hover{
+    background-color: rgb(1, 51, 38);
+}
+.homeslide .title{
+    width: 800px;
+}
+.homeslide .btmtitle{
+    width: 800px;
+}
+.buildSec .line{
+    height:3px;
+    width: 100px;
+    background-color: rgb(1, 51, 38);
+}
+.buildSec .h1{
+    color: rgb(1, 51, 38);
+}
+.buildSec .readlink{
+    color: rgb(1, 51, 38);
+    font-weight: bold;
+    transition: 0.2s ease;
+    background-color: transparent;
+    border: none;
+}
+.buildSec .readlink:hover{
+    color: rgb(146, 54, 85);
+}
+
+.buildSec .outerdiv{
+    transition: 0.5s ease-in-out all;
+}
+.buildSec .outerdiv > div {
+    overflow: hidden;
+    cursor: pointer;
+}
+.buildSec .outerdiv > div:hover{
+    filter: drop-shadow(0 0 4em #64c6ff9c);
+}
+
+.buildSec .outerdiv>div img{
+    transition: 0.5s ease-in-out all;
+}
+.buildSec .outerdiv>div:hover img{
+    transform: scale(1.1);
+}
+.tab-content > .tab-pane >div img{
+    height: 250px;
+    width: 350px;
+    transition: 0.5s ease-in-out all;
+}
+.tab-content >.tab-pane > div :hover img{
+    transform:translateY(10px);
+   
+}
+/* ------------------------- */
+.designSec .imgclass{
+    overflow: hidden;
+
+}
+.designSec .imgclass img{
+    transition: 0.5s ease-in-out all;
+ }
+.designSec .imgclass:hover img{
+    transform: scale(1.1);
+}
+/* imgclass */
+.designSec .line{   
+    height:3px;
+    width: 100px;
+    background-color: rgb(1, 51, 38);
+}
+.designSec .progress{
+    height: 0.5rem;
+    background-color: transparent;
+    --bs-progress-bar-bg:rgb(1, 51, 38);   
+}
+.designSec .designinfo{
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+#loginpage{
+    background: linear-gradient(40deg, rgb(235, 150, 97), rgb(101, 94, 236), rgb(233, 145, 200));
+}
+#loginpage input[type="text"],
+[type="password"] {
+    border: none;
+    border-bottom: 2px solid black !important;
+    border-radius: 0;
+}
+
+#loginpage input[type="text"]:focus,
+[type="password"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+.offcanvasSearch{
+    background-color: rgba(0, 0, 0, 0.711);
+}
+.btnclose{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: none;
+}
+
+.list-group-item.active{
+    background-color: rgb(1, 51, 38);
+    border-color: rgb(1, 51, 38);
+}
+.list-group-item {
+    border :1px solid rgb(205, 203, 203) !important
+}
+.footer .icon{
+    height: 33px;
+    width: 33px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    transition: 0.5s ease-in-out all;
+}
+.footer .icon:hover{
+     transform: scale(1.5);
+     background-color: brown;
+    }
+
+.footer .icon a{
+    color: white;
+}
